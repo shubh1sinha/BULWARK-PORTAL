@@ -1,0 +1,30 @@
+/* Style the video: 100% width and height to cover the entire window */
+
+
+body {
+    background:url('img/g.gif'), linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
+    background-blend-mode: overlay;
+	width:100%;
+		max-height:50%;
+		
+     background-size: cover;
+    
+    width:100%;
+}
+
+#cb{
+		width: 800px;
+		max-height: 800px;
+		display: block;
+		margin-top:20%;
+		margin-left:20%;
+		align: center;
+	}
+	.cb_reply{
+		border: none;
+		background: #fff;
+		border-radius: 1px;
+		width: 200px;
+		max-width: 800px;
+		min-height: 25px;
+	}

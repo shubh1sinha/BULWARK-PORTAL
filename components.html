@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Bulwark Features</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <!-- styles -->
+  <link href="css/bootstrap.css" rel="stylesheet">
+  <link href="css/bootstrap-responsive.css" rel="stylesheet">
+  <link href="css/prettyPhoto.css" rel="stylesheet">
+  <link href="font/stylesheet.css" rel="stylesheet">
+  <link href="css/animate.css" rel="stylesheet">
+  <link rel="stylesheet" media="screen" href="css/sequencejs.css">
+  <link href="js/google-code-prettify/prettify.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <link href="color/default.css" rel="stylesheet">
+
+  <!-- Fav and touch icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="ico/apple-touch-icon-144-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="ico/apple-touch-icon-114-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="ico/apple-touch-icon-72-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" href="ico/apple-touch-icon-57-precomposed.png">
+  <link rel="shortcut icon" href="ico/favicon.ico">
+u
+
+</head>
+
+<body>
+  <header>
+    <div id="topnav" class="navbar navbar-fixed-top default">
+      <div class="navbar-inner">
+        <div class="container">
+          <div class="logo">
+            <a class="brand" href="index.html"><img src="img/unnamed.png"style="width: 100px;height: 50px"; alt=""></a>
+          </div>
+          <li><a href="#"><b>Hi <?php echo $_GET['username'];?></b></a></li>
+          <div class="navigation">
+            <nav>
+              <ul class="nav pull-right">
+                <li><a href="mainpage.php" class="external">Home</a></li>
+                <li class="dropdown current">
+                  <a href="#">More</a>
+                  <ul class="dropdown-menu">
+                    <li><a href="Logout.php">Logout</a></li>
+                    <li><a href="mainpage.php" class="external">Main Page</a></li>
+
+                  </ul>
+                </li>
+              </ul>
+            </nav>
+          </div>
+       
+        </div>
+      </div>
+    </div>
+  </header>
+  <section id="featured">
+    <div class="container">
+      <div class="row">
+        <div class="span12">
+          <div class="letter-container inner-heading">
+            <h2 class="fade">FEATURES</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- section main content -->
+  <section id="maincontent" class="section">
+    <div class="container">
+      <div class="row">
+        <div class="span12">
+          <div class="row">
+            <div class="span4">
+              <h3>Tab</h3>
+              <ul class="nav nav-tabs">
+                <li class="active"><a href="#purchase" data-toggle="tab"><i class="icon-shopping-cart"></i> About Bulwark</a></li>
+                <li><a href="#customize" data-toggle="tab"><i class="icon-wrench"></i> Idea</a></li>
+                <li><a href="#enjoy" data-toggle="tab"><i class="icon-heart"></i> Enjoy</a></li>
+              </ul>
+              <div class="tab-content">
+                <div class="tab-pane active" id="About">
+                  <p>
+                    <strong>Agriculture Drone</strong> Precision technology has driven the farming revolution in recent years. Monitoring crops from the sky using agricultural drones looks set to drive the next, as agronomists, agricultural engineers and farmers turn to UAVs (or UAS) to gain more efficient crop insights and to more accurately plan and manage their operations.</p>
+                  
+                </div>
+                <div class="tab-pane" id="Idea">
+                  <p>
+                    Our Idea Presents main applications of drone which is given below in applications corner.
+                  </p>
+                </div>
+                <div class="tab-pane" id="enjoy">
+                  <p>
+                   The technology in this world is growing day by day.The proposed drone allows us to help to farmers.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="span4">
+              <h3>Application</h3>
+              <!-- start: Accordion -->
+              <div class="accordion" id="accordion2">
+                <div class="accordion-group">
+                  <div class="accordion-heading">
+                    <a class="accordion-toggle active" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
+								<i class="icon-minus"></i> Crop Monitoring & Soil Assesment </a>
+                  </div>
+                  <div id="collapseOne" class="accordion-body collapse in">
+                    <div class="accordion-inner">
+                      <h3>Crop Monitoring</h3>
+                      <p>
+                      Our Drone provides a holistic view of crop's growth enabling agriculture professional to quickly and precisely identify issues and better target  their field scouting multi year drone data also allows the better planning and monitoring of improvements such as ditches and evolving fertilizer application</p>
+                      <h3>Soil Assesment</h3>
+                      <p>Drone data can be employed to extract soil characteristics includes temperature,moisture,slope,elevation and many more.This ability enables more accurate soil sampling and the product of more suitable seeding prescriptions Plant Emergence and population:-Professional like agronomists are increasingly using the data from agricultural Drones to better understand which plants emerge,as well as population and spacing matrices.This information is used to drive replanting decisions, thinning and pruning  activity and to improve crop models. </p>
+
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-group">
+                  <div class="accordion-heading">
+                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo">
+								<i class="icon-plus"></i> Plant Emergence & Harvest Planning </a>
+                  </div>
+                  <div id="collapseTwo" class="accordion-body collapse">
+                    <div class="accordion-inner">
+                      <h3>Plant Emergence</h3>
+                      <p>Professionals like agronomists are increasingly using the data from agricultural drones to better understand which plants emerge, as well as population and spacing metrics. This information is then used to drive replanting decisions, thinning and pruning activity, and to improve crop models.</p>
+                      <h3>Harvest Planning</h3>
+                      <p>A Drone data, collected at critical growth stages throughout the growing season, can help agronomists and ag engineers to improve their models, predictions and planning. The result is that teams can better anticipate both a harvest's quality and its final yield</p>
+
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-group">
+                  <div class="accordion-heading">
+                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseThree">
+								<i class="icon-plus"></i> Crop Protection & Insaurance </a>
+                  </div>
+                  <div id="collapseThree" class="accordion-body collapse">
+                    <div class="accordion-inner">
+                      <h3>Crop Protection</h3>
+                     <p> The digital outputs generated by agricultural drones (using software such as Pix4Dfields) when assessing stress and crop growth can help to guide the proper and efficient application of crop protection products. This allows for finely-tuned applications that meet the exact needs of each acre.</p>
+                     <h3>Insaurance</h3>
+                     <p>On-demand, high-resolution drone data is perfect or capturing and accurately reporting events that lead to economic loss, such as crop injury, destruction and reduced health, helping to create a more efficient adjustment process
+                      </p>
+
+                  </div>
+                </div>
+              </div>
+              <!--end: Accordion -->
+            </div>
+            <div class="span4">
+              <h3>Progress Report</h3>
+              <LABEL>Accuracy Coverage</LABEL>
+              
+              <div class="progress progress-striped active">
+                <div class="bar bar-success bar40">
+                </div>
+              </div>
+              <LABEL>Success & Failure Drops</LABEL>
+              <div class="progress">
+                <div class="bar bar-info bar35">
+                </div>
+                <div class="bar bar-success bar30">
+                </div>
+                <div class="bar bar-warning bar15">
+                </div>
+                <div class="bar bar-danger bar10">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="solid_line">
+          </div>
+          <div class="row">
+            <div class="span4 demobutton">
+              <center>DRONE APPLICATION</h3>
+            <p> <a href="#" class="btn btn-success">Crop Monitoring</a></p>
+              <p><a href="#" class="btn btn-warning">Soil Assesment</a></p>
+             <p> <a href="#" class="btn btn-info">Plant Emergence</a></p>
+              
+              <p><a href="#" class="btn btn-inverse">Harvest Planning</a></p>
+              <p><a href="#" class="btn btn-color">Crop Protection</a></p></center>
+              <div class="dotted_line">
+              </div>
+            </div>
+          
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+  <!-- section main content -->
+
+  <footer>
+    <div class="verybottom">
+      <div class="container">
+        <div class="row">
+          <div class="span12">
+            <div class="aligncenter">
+              <div class="logo">
+                <a class="brand" href="index.html">
+								<img src="img/unnamed.png" alt="">
+							</a>
+              </div>
+              <p>Feel The Technological Pulse</p>
+              <div class="social-links">
+                <ul class="social-links">
+                  <li><a href="#" title="Twitter"><i class="icon-circled icon-64 icon-twitter"></i></a></li>
+                  <li><a href="#" title="Facebook"><i class="icon-circled icon-64 icon-facebook"></i></a></li>
+                  <li><a href="#" title="Google plus"><i class="icon-circled icon-64 icon-google-plus"></i></a></li>
+                  <li><a href="#" title="Linkedin"><i class="icon-circled icon-64 icon-linkedin"></i></a></li>
+                  <li><a href="#" title="Pinterest"><i class="icon-circled icon-64 icon-pinterest"></i></a></li>
+                </ul>
+              </div>
+
+              <p>
+                &copy; Bulwark - All right reserved
+              </p>
+              <div class="credits">
+              
+                Designed by Team Bulwark</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery.easing.js"></script>
+  <script src="js/bootstrap.js"></script>
+  <script src="js/jquery.lettering.js"></script>
+  <script src="js/parallax/jquery.parallax-1.1.3.js"></script>
+  <script src="js/nagging-menu.js"></script>
+  <script src="js/portfolio/jquery.quicksand.js"></script>
+  <script src="js/portfolio/setting.js"></script>
+  <script src="js/jquery.scrollTo.js"></script>
+  <script src="js/jquery.nav.js"></script>
+  <script src="js/modernizr.custom.js"></script>
+  <script src="js/prettyPhoto/jquery.prettyPhoto.js"></script>
+  <script src="js/prettyPhoto/setting.js"></script>
+  <script src="js/jquery.flexslider.js"></script>
+
+
+  <script src="js/custom.js"></script>
+
+</body>
+
+</html>

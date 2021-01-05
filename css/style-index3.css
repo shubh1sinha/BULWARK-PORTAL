@@ -1,0 +1,13 @@
+#cb{
+		width: 400px;
+		height: 500px;
+		background: #eee;
+	}
+	.cb_reply{
+		border: none;
+		background: #fff;
+		border-radius: 1px;
+		width: 200px;
+		max-width: 50%;
+		min-height: 25px;
+	}

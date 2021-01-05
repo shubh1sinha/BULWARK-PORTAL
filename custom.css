@@ -1,0 +1,83 @@
+
+body{
+	margin:0px;
+	padding: 0px;
+	background: white;
+}
+
+.custom-nav{
+	background: #3f167f;
+}
+.custom-cards{box-shadow:0 2px 2px 0 rgba(0,0,0,0.14),0 3px 1px -2px rgba(0,0,0,0.12),0 1px 5px 0 rgba(0,0,0,0.2);}
+.custom-container{
+	padding:10px;
+}
+.graph-contatiner{
+	background:white;
+	/*height:55vh;*/
+	padding: 5px;
+	margin:5px;
+	border-radius: 25px;
+	box-sizing: border-box;
+}
+
+.sub-graph-container{
+	background: white;
+	height: 100%;
+	margin:2px;
+	border:3px solid #ff0078;
+	border-radius: 25px;
+}
+
+.action-contatiner{
+	background:white;
+	padding: 2px;
+	margin:5px;
+	border-radius: 25px; 
+	/*box-sizing: border-box;*/
+}
+
+.sub-action-container{
+	height: 300px;
+	margin:2px;
+	border:1px solid #ff0078; 
+	border-radius: 25px;
+}
+
+.indicator{
+	height: 68%;
+}
+
+.indicator-icon{
+	height:50px;
+	width:50px;
+	border-radius: 50%;
+	margin: auto;
+	margin-top: 10%;
+	background: green;
+	padding: 2px;
+	border: 1px solid rgb(0, 200, 0);
+    box-shadow: 0px 2px 20px rgba(0, 0, 0, 1) inset, 0px 0px 20px rgba(0, 200, 0, 0.8);
+}
+.action-btns{
+	padding:3px;
+}
+.cutom-btn{
+	border:3px solid #C0C0C0;
+	border-radius: 25px;
+	height:50px;
+}
+.action-header{
+	border-radius: 25px;
+	color: #3f167f;
+	margin: auto;
+	text-align:center;
+	vertical-align: middle;
+}
+
+.nav-link{
+	
+}
+*{
+    color: black;
+}

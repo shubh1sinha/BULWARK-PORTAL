@@ -1,0 +1,129 @@
+<?php
+
+	session_start();
+	if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
+		header("location: index.php");
+		exit;	
+	}
+
+    	include_once("connection.php");	
+    	$database_name = "smartroom";
+
+    	mysqli_select_db($connection,$database_name) or die("No databse Found");
+
+	$stmt = $connection->prepare("SELECT `id`, `temperature`, `humidity`,`timeStamp` FROM `room_data` DESC"); 
+	$stmt->execute();
+
+	$bin_sensor_report_data = "";
+	if($stmt->rowCount() > 0)
+	{
+		while($row = $stmt->fetch(PDO::FETCH_ASSOC))
+		{
+              
+            $bin_sensor_report_data .= '<tr>
+		        	    <td>'.$row['id'].'</td>
+                                    <td>'.$row['id'].'</td>
+                                    <td>'.$row['temperature'].'</td>
+                                    <td>'.$row['humidity`'].'</td>
+                                    <td>'.$row['timeStamp'].'</td>
+                                </tr>';
+		}
+	}
+    $connection->close();*/
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Smart Room</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/paho-mqtt/1.0.1/mqttws31.min.js" type="text/javascript"></script>
+
+    <link href="css/custom.css" rel="stylesheet">
+    <script src="js/ipTable.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="js/chart.min.js"></script>
+    <script src="js/mqtt.js"></script>
+
+  </head>
+
+  <body>
+
+    <!-- ********************* Navigation Header Starting ********************** -->
+    <nav class="navbar navbar-expand-lg navbar-dark " style="background: #01579b;">
+      <a class="navbar-brand" href="#">Smart Room Dashboard</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+  
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="nav navbar-nav ml-auto">
+
+          <li class="nav-item ">
+            <a class="nav-link" href="report.php">Report<span class="sr-only">(current)</span></a>
+          </li>
+
+
+          <li class="nav-item ">
+            <a class="nav-link" href="#"><?php echo ($_SESSION["username"]) ?> <span class="sr-only">(current)</span></a>
+          </li>
+      
+          <li class="nav-item">
+            <a class="nav-link" href="logout.php">Log out</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- ********************* Navigation Header Ending ********************** -->
+
+    <!-- ********************* Main Contatiner Starting ********************** -->
+    <div class="container-fluid custom-container">
+		<!--section>
+			<div class="row">
+				<div class="card custom-cards col-sm-5" style="height:80vh;overflow-y:auto;">
+					<div class="card-body">
+						<table class="table table-bordered table-striped">
+							<thead>
+								<tr>
+									<th>Serial No</th>
+									<th>Temperature</th>
+									<th>Humidity </th>
+                                    <th>DateTime</th>
+								</tr>									
+							</thead>
+							
+							<tbody>
+								<?php echo $bin_sensor_report_data; ?>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+		</section-->
+    </div>
+    <!-- ********************* Main Contatiner Ending ********************** -->
+
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
